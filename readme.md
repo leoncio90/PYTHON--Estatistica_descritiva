@@ -1,5 +1,3 @@
-# visualização de dados sobre os resultados financeirosdo último trimestre do ano
-
 ## ------- Projeto de análise descritiva e tratamento de dados -------
 
 De modo geral, é possível afirmar que dados são conjuntos de informações (ocorrências) e valores que, ao serem comparados e combinados, podem gerar bases complexas de conhecimentos e propiciar grandes benefícios financeiros e intelectuais aos seus detentores.
