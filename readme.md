@@ -6,7 +6,19 @@ De modo geral, é possível afirmar que dados são conjuntos de informações (o
 
 Nesse sentido, considere que você é um cientista de dados em uma grande empresa familiar do ramo imobiliário.
 
-###
+## --------------
+
+- Você recebeu a tarefa de projetar uam visualização de dados sobre os resultados financeiros do último trimestre do ano, considerando os pagamentos de aluguéis e os inadimplentes do período.
+
+- Os dados serão obtidos de diversas fontes, como planilhas, planilhas excel e relatórios extraídos do sistema web da empresa.
+
+- Tendo em vista que seu público alvo não tem um perfil técnico, você sente a necessidade de simplificar as informações ao máximo, de modo a não gerar grandes dificuldades na compreensão dos dados.
+
+- Metade da equipe gestora tem domínio básico de informática e a outra metade tem conhecimentos intermediários de excel.
+
+## --------------
+
+### -- OBS--> O cliente forneceu apenas uma planilha excel com poucas informações. sendo possível apresentar apenas dados estatísticos dos juros cobrados e dos aluguéis cobrados.
 
 ### Responda:
 
