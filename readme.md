@@ -2,15 +2,15 @@
 
 De modo geral, é possível afirmar que dados são conjuntos de informações (ocorrências) e valores que, ao serem comparados e combinados, podem gerar bases complexas de conhecimentos e propiciar grandes benefícios financeiros e intelectuais aos seus detentores.
 
-Nesse sentido, considere que você é um cientista de dados em uma grande empresa familiar do ramo imobiliário.
+Nesse sentido, iremos realizar este projeto para uma grande empresa familiar do ramo imobiliário como Cientista de Dados.
 
 ## --------------
 
-- Você recebeu a tarefa de projetar uam visualização de dados sobre os resultados financeiros do último trimestre do ano, considerando os pagamentos de aluguéis e os inadimplentes do período.
+- A tarefa é projetar a visualização de dados sobre os resultados financeiros do último trimestre do ano, considerando os pagamentos de aluguéis e os inadimplentes do período.
 
-- Os dados serão obtidos de diversas fontes, como planilhas, planilhas excel e relatórios extraídos do sistema web da empresa.
+- Os dados foram obtidos de diversas fontes, como planilhas, planilhas excel e relatórios extraídos do sistema web da empresa.
 
-- Tendo em vista que seu público alvo não tem um perfil técnico, você sente a necessidade de simplificar as informações ao máximo, de modo a não gerar grandes dificuldades na compreensão dos dados.
+- Tendo em vista que seu público alvo não tem um perfil técnico, houve a necessidade de simplificar as informações ao máximo, de modo a não gerar grandes dificuldades na compreensão dos dados.
 
 - Metade da equipe gestora tem domínio básico de informática e a outra metade tem conhecimentos intermediários de excel.
 
