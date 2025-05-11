@@ -4,7 +4,7 @@ Este projeto demonstra um fluxo completo de trabalho com dados utilizando Python
 
 O principal artefato deste repositório é o notebook Jupyter `elaborando_relatorio.ipynb`, que detalha cada etapa do processo.
 
-## 🎯 Objetivos do Projeto
+## Objetivos do Projeto
 
 * Realizar uma limpeza e transformação abrangente em um conjunto de dados (originalmente de um arquivo Excel).
 * Aplicar técnicas de engenharia de atributos para extrair informações relevantes.
@@ -12,7 +12,7 @@ O principal artefato deste repositório é o notebook Jupyter `elaborando_relato
 * Gerar visualizações (gráficos de barras) para representar essas estatísticas.
 * Produzir um relatório final em Excel contendo os dados tratados e as visualizações geradas.
 
-## 🚀 Funcionalidades Implementadas
+## Funcionalidades Implementadas
 
 O notebook `elaborando_relatorio.ipynb` executa as seguintes etapas:
 
@@ -40,7 +40,7 @@ O notebook `elaborando_relatorio.ipynb` executa as seguintes etapas:
     * Incorporação dos gráficos PNG gerados em uma planilha dentro do relatório Excel.
     * Salvamento do DataFrame com os dados já tratados e limpos no arquivo `dadosTratados.xlsx`.
 
-## 🛠️ Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 * **Python 3**
 * **Jupyter Notebook**
@@ -53,9 +53,9 @@ O notebook `elaborando_relatorio.ipynb` executa as seguintes etapas:
     * **datetime:** Para manipulação de datas.
     * **os:** (Utilizado para interações com o sistema de arquivos, se necessário para caminhos de arquivos).
 
-## 📋 Pré-requisitos
+## Pré-requisitos
 
 Para executar este projeto, você precisará ter o Python 3 instalado, juntamente com as bibliotecas listadas acima. Você pode instalá-las usando pip:
 
 ```bash
-pip install pandas matplotlib openpyxl jupyter
+pip install pandas matplotlib openpyxl jupytergit push origin main
