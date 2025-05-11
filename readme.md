@@ -1,33 +1,61 @@
-## ------- Projeto de análise descritiva e tratamento de dados -------
+# PYTHON--Estatistica_descritiva: Projeto de Tratamento, Análise e Relatório de Dados
 
-De modo geral, é possível afirmar que dados são conjuntos de informações (ocorrências) e valores que, ao serem comparados e combinados, podem gerar bases complexas de conhecimentos e propiciar grandes benefícios financeiros e intelectuais aos seus detentores.
+Este projeto demonstra um fluxo completo de trabalho com dados utilizando Python, focado no tratamento e limpeza de um conjunto de dados brutos, realização de análises estatísticas descritivas e, por fim, na geração de um relatório consolidado em formato Excel com visualizações.
 
-Nesse sentido, iremos realizar este projeto para uma grande empresa familiar do ramo imobiliário como Cientista de Dados.
+O principal artefato deste repositório é o notebook Jupyter `elaborando_relatorio.ipynb`, que detalha cada etapa do processo.
 
-## --------------
+## 🎯 Objetivos do Projeto
 
-- A tarefa é projetar a visualização de dados sobre os resultados financeiros do último trimestre do ano, considerando os pagamentos de aluguéis e os inadimplentes do período.
+* Realizar uma limpeza e transformação abrangente em um conjunto de dados (originalmente de um arquivo Excel).
+* Aplicar técnicas de engenharia de atributos para extrair informações relevantes.
+* Calcular estatísticas descritivas básicas (média, mínimo, máximo) para colunas financeiras chave.
+* Gerar visualizações (gráficos de barras) para representar essas estatísticas.
+* Produzir um relatório final em Excel contendo os dados tratados e as visualizações geradas.
 
-- Os dados foram obtidos de diversas fontes, como planilhas, planilhas excel e relatórios extraídos do sistema web da empresa.
+## 🚀 Funcionalidades Implementadas
 
-- Tendo em vista que seu público alvo não tem um perfil técnico, houve a necessidade de simplificar as informações ao máximo, de modo a não gerar grandes dificuldades na compreensão dos dados.
+O notebook `elaborando_relatorio.ipynb` executa as seguintes etapas:
 
-- Metade da equipe gestora tem domínio básico de informática e a outra metade tem conhecimentos intermediários de excel.
+1.  **Carregamento de Dados:**
+    * Leitura do arquivo de entrada `dadosDesafio.xlsx` utilizando a biblioteca Pandas.
 
-## --------------
+2.  **Limpeza e Pré-processamento Extensivo dos Dados**:
+    * Padronização dos nomes das colunas (maiúsculas, snake_case, remoção de acentos, substituição de abreviações).
+    * Limpeza de dados textuais (remoção de espaços, normalização de acentos, conversão para maiúsculas, substituição de "AV." por "AVENIDA").
+    * Conversão de tipos de dados para formatos apropriados (strings, floats, datas).
+    * Tratamento específico de datas e formatação da coluna `DIA_VENCIMENTO`.
 
-### -- OBS--> O cliente forneceu apenas uma planilha excel com poucas informações. sendo possível apresentar apenas dados estatísticos dos juros cobrados e dos aluguéis cobrados.
+3.  **Engenharia de Atributos**:
+    * Extração do número do imóvel a partir da coluna de endereço usando expressões regulares (`re.search(r'\d+$', ENDERECO_IMOVEL)`), criando uma nova coluna `NUMERO_IMOVEL` e atualizando a coluna `ENDERECO_IMOVEL`.
 
-### Responda:
+4.  **Análise Estatística Descritiva**:
+    * Cálculo da média, valor mínimo e valor máximo para as colunas `ALUGUEL` e `JUROS_ATRASO`.
 
-###### a) Levando em conta que a visualização de dados deve ser projetada para um público não técnico, quais ferramentas podem ser adotadas para a projeção dos resultados financeiros da imobiliária?
+5.  **Visualização de Dados**:
+    * Criação de gráficos de barras com Matplotlib para apresentar as estatísticas de `ALUGUEL` e `JUROS_ATRASO`.
+    * Salvamento dos gráficos como arquivos PNG (`grafico_aluguel.png` e `grafico_juros.png`).
 
-###### **R - Acredito que WORD CLOUDS não seria interessante pois a demanda é a de apresentação de resultados estatísticos. A ferramenta ideal para essa atividade seria a apresentação de gráficos onde serão informados os dados de acordo com cada mês.**
+6.  **Geração de Relatório**:
+    * Criação de um arquivo Excel (`Relatório_Trimestral.xlsx`) utilizando Openpyxl.
+    * Incorporação dos gráficos PNG gerados em uma planilha dentro do relatório Excel.
+    * Salvamento do DataFrame com os dados já tratados e limpos no arquivo `dadosTratados.xlsx`.
 
-###### b) Como você projetaria visualmente os dados de inadimplentes e pagantes do último trimestre do ano? Identifique e detalhe possíveis soluções, justificando-as.
+## 🛠️ Tecnologias Utilizadas
 
-###### **R - através De um gráfico de colunas. Acredito que seria suficiente para um simples entendimento do relatório.**
+* **Python 3**
+* **Jupyter Notebook**
+* **Bibliotecas Python:**
+    * **Pandas:** Para manipulação e análise de dados tabulares.
+    * **NumPy:** (Utilizado indiretamente pelo Pandas) Para operações numéricas.
+    * **Matplotlib:** Para a criação de gráficos e visualizações.
+    * **Openpyxl:** Para leitura e escrita de arquivos Excel (.xlsx).
+    * **re (Expressões Regulares):** Para manipulação avançada de strings.
+    * **datetime:** Para manipulação de datas.
+    * **os:** (Utilizado para interações com o sistema de arquivos, se necessário para caminhos de arquivos).
 
-###### c) Com base no arquivo DadosDesafio.xlsx, apresente um código ​​​​​​​em Python mostrando a carga dos dados e, em seguida, demonstre a **média** e os valores **mínimos** e **máximos** de cada coluna numérica da planilha.
+## 📋 Pré-requisitos
 
-###### **R - considerando que a coluna cod_imovel não necessita de dados estatístico pois é apenas um ID, o dia de vencimento é um parâmetro e as datas mostram se o serviço foi pago em dia ou não, só podemos apresentar esses dados estatísticos do valor do aluguel e da porcentagem de juros visto que aparentemente, o juros reflete o atraso referente ao trimestre e não ao mês ou dia de atraso. Faltam informações para análises mais precisas. Portanto, serão apresentados os dados estatísticos dos alugueis cobrados e dos juros cobrados(considerando que seu valor total se refere a todo o trimestre).**
+Para executar este projeto, você precisará ter o Python 3 instalado, juntamente com as bibliotecas listadas acima. Você pode instalá-las usando pip:
+
+```bash
+pip install pandas matplotlib openpyxl jupyter
